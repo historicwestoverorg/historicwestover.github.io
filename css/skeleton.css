@@ -10,6 +10,7 @@
 
 /* Table of contents
 ––––––––––––––––––––––––––––––––––––––––––––––––––
+- Fixed Footer
 - Grid
 - Base Styles
 - Typography
@@ -25,6 +26,30 @@
 - Media Queries
 */
 
+
+
+
+/*FIXED FOOTER  http://www.cssgirl.com/articles/2011/05/29/how-to-anchor-the-footer-to-bottom-of-page-or-header-to-top/
+*/
+
+.wrapfoot {
+    position:relative;
+    margin:0 auto;
+               /*replace 900px with your width*/
+    width:900px;
+    text-align: center;
+  }
+
+   #footer {
+    width:100%;
+    float:left;
+  }
+
+  #footer {
+    position:fixed;
+    bottom:0;
+    z-index:999999;
+  }
 
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -165,7 +190,8 @@ p {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #1EAEDB; }
+  color: #1EAEDB; 
+text-decoration: none;}
 a:hover {
   color: #0FA0CE; }
 
